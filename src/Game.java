@@ -276,7 +276,7 @@ public class Game extends JFrame
             }
         }
         catch (ConcurrentModificationException e){
-            System.out.println("Something fucked up: "+e);
+            System.out.println("Array overwriten: "+e);
         }
     }
     /**
@@ -309,7 +309,7 @@ public class Game extends JFrame
                 }
             }
         }catch (ConcurrentModificationException e){
-            System.out.println("Something fucked up: "+e);
+            System.out.println("Array modified: "+e);
         }
         g.setColor(Color.BLACK);
         //g.drawString("Time: "+(timer.getTime())/1000,50,80);
